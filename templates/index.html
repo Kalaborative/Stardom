@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stardom</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="static/css/lb.css">
+</head>
+<body>
+  <div class="table">
+  <div class="table-cell">
+    <ul class="leader">
+      {% for u in users %}
+      <li>
+        <span class="list_num">{{u[0] + 1}}</span>
+        <img src="static/img/{{u[2]}}">
+        <h2>{{u[1]}}<span class="number">0</span></h2>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+<script src="static/js/lb.js"></script>
+</body>
+</html>
